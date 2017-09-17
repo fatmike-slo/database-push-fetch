@@ -1,0 +1,94 @@
+
+        <div class="container text-center">
+            <div class="row">
+            <br>
+
+            <h4>This page is rendered via <a href="http://handlebarsjs.com/">
+            <img src="https://image.ibb.co/gR1cb5/handlebars_logo.png" alt="handlebars_logo" border="0"></a>
+            </h4>
+                <div class="col-xs-4 col-sm-4 col-md-4 divs">
+                    <ul id="firstCol">
+                        <li style="font-weight:bold;">Names</li>
+                        {{#each arrName}}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                    <!-- add form -->
+                    <form id="addForm" method="POST" action="/add">
+                        <h3>Add</h3>
+                        <div class="form-group">
+                            <label for="name">Add name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="nickname">Add nickname</label>
+                            <input type="text" name="nickname">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Add age</label>
+                            <input type="text" name="age">
+                            <button class="btn btn-info btn-sm">Add</button>
+                        </div>
+                    </form>
+                    <!-- add form ends -->
+
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 divs">
+                    <ul id="secondCol">
+                        <li style="font-weight:bold;">Nicknames</li>
+                        {{#each arrNn}}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                    <!-- update form -->
+                    <form id="updateForm" method="POST" action="/update">
+                        <h3>Update</h3>
+                        <div class="form-group">
+                            <label for="name">Enter name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="nickname">New nickname</label>
+                            <input type="text" name="nickname">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Enter new age</label>
+                            <input type="text" name="age">
+                            <button class="btn btn-info btn-sm">Update</button>
+                        </div>
+                    </form>
+                    <!-- update form ends -->
+
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 divs">
+                    
+                    <ul id="thirdCol">
+                        <li style="font-weight:bold;">Age</li>
+                        {{#each arrAge}}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+
+                    <!-- delete form -->
+                    <form id="deleteForm" method="POST" action="/delete">
+                        <h3>Delete</h3>
+                        <div class="form-group">
+                            <label for="name">Find name</label>
+                            <input type="text" name="name">
+                            <button class="btn btn-info btn-sm">Delete</button>
+                        </div>
+                    </form>
+                    <!-- delete form ends -->
+                </div>
+            </div>
+            <div class="row">
+                <h3>Raw info</h3>
+                <ul id="ulRaw">
+                {{#each allData }}<li><code> {{ this }}</code></li><hr> {{/each }}
+                </ul>
+            </div>
+            <a href="/">Back to the intro page</a>
+            <br>
+            <br>
+            <br>
+        </div>

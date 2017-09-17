@@ -1,0 +1,83 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .row {
+      margin: 0;
+      padding: 0;
+  }
+  .divs {
+      padding:0;
+  }
+  ul {
+      width:100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 20px;
+  }
+  img{
+    height:70px;
+    width:100px;
+  }
+  /* first column ---------------*/
+  #firstCol {
+      border-left: 1px solid #000;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+  }
+  #firstCol>li {
+      border-top: 1px solid #000;
+  }
+  #firstCol>li:first-child {
+      border: none;
+  }
+  /* second column --------------*/
+  #secondCol {
+      border: 1px solid #000;
+  }
+  #secondCol>li {
+      border-top: 1px solid #000;
+  }
+  #secondCol>li:first-child {
+      border:none;
+  }
+  /* third columns ------------- */
+  #thirdCol {
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+  }
+  #thirdCol>li {
+      border-top: 1px solid #000;
+  }
+  #thirdCol>li:first-child {
+      border-top: none;
+  }
+  li:nth-child(even) {
+      background: #DFDFDF;
+  }
+  /* end columns styling*/
+  
+  /* ---------- form styling ------------*/
+  
+  #addForm {
+      background: #A5FFB1;
+  }
+  #updateForm {
+      background: #FFF1B5;
+  }
+  #deleteForm {
+      background: #FFC3C3;
+  }
+  input {
+      width:90%;
+  }
+  button {
+      margin-top:10px;
+  }
+  /* END form styling*/
+  
+  #ulRaw {
+      list-style:decimal;
+      list-style-position: inside;
+  }

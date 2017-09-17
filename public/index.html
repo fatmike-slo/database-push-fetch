@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .container {
+            width:200px;
+        }
+        .form-group {
+            margin:0;
+            padding: 0;
+        }
+        button {
+            margin-top:20px;
+        }
+        form {
+            background: #f3f3f3;
+        }
+        p {
+            text-align: justify;
+            height: 150px;
+            width: 170px;
+            margin:20px 0px 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Welcome to my example project in which I have used the MongoDb database, Handlebars view engine, Express as server side language framework based on the NodeJs technology</p>
+            <hr>
+            <h4>Add a new entry in the data database:</h4>
+            <form class="text-center" method="POST" action="/add">
+                <div class="form-group">
+                    <label for="name">Enter name:</label>
+                    <input name= "name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="nickname">Enter nickname:</label>
+                    <input name="nickname" class="form-control">
+                </div>
+                <div class="form-group ">
+                    <label for="age">Enter age:</label>
+                    <input name="age" class="form-control">
+                    <button type="submit" class="btn btn-success">Add entry</button>
+                </div>
+            </form>
+            <p class="text-center">... or go directyl to the &nbsp; <a href="/view">view page</a></p>
+        </div>
+      <footer>Author: Stupar Andrej, &copy; September, 2017</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
